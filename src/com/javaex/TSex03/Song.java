@@ -1,0 +1,31 @@
+package com.javaex.TSex03;
+
+public class Song {
+
+	private String title;
+	private String artist;
+	private String album;
+	private String composer;
+	private int year;
+	private int track;
+
+	public Song() {
+		System.out.println("Song(파라미터0개)");
+	}
+
+	public Song(String title, String artist, String album, String composer, int year) {
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		System.out.println("Song(파라미터 5개)");
+	}
+
+	public Song(String title, String artist, String album, String composer, int year, int track) {
+		this(title, artist, album, composer, year);
+		this.track = track;
+		System.out.println("Song(파라미터 6개)");
+	}
+
+}
